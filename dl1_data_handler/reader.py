@@ -2024,5 +2024,6 @@ class DLDataReader:
 
         # Preprocess the example
         example = self.processor.process(example)
-
+        example.append(index)
+        
         return example
